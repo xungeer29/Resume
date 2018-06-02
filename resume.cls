@@ -8,10 +8,9 @@
 \RequirePackage{xltxtra}
 % use xifthen
 \RequirePackage{xifthen}
-% use progress bar for skill
-\RequirePackage{progressbar}
 % use hyperlink for email and url
 \RequirePackage{hyperref}
+\hypersetup{hidelinks}
 \RequirePackage{url}
 \urlstyle{tt}
 % use fontawesome
@@ -22,14 +21,20 @@
 \RequirePackage{fontspec}
 % Main document font
 \setmainfont[
+  Path = fonts/Main/ ,
+  Extension = .otf ,
+  UprightFont = *-regular ,
+  BoldFont = *-bold ,
+  ItalicFont = *-italic ,
+  BoldItalicFont = *-bolditalic ,
   SmallCapsFont = Fontin-SmallCaps
-]{Sarasa Gothic SC}
+]{texgyretermes}
 
 \RequirePackage[
 	a4paper,
-	left=0.6in,
-	right=0.6in,
-	top=0.50in,
+	left=0.8in,
+	right=0.8in,
+	top=0.70in,
 	bottom=0.55in,
 	nohead
 ]{geometry}
@@ -102,12 +107,6 @@
     {\href{#2}{#2}}
     {\href{#2}{#1}}}
 
-% defines progress bar with text
-% usage: \pbar[3][width]{Text}{percentage}
-\newcommand{\pbar}[3][10em]{{#2}\ 
-  \progressbar[heightr=1, width=#1, borderwidth=0pt, roundnessr=0.45, filledcolor=green!40, subdivisions=1]{#3}
-}
-
 \newcommand{\basicInfo}[1]{
   \centerline{\sffamily\large{#1}}
   \vspace{1.5ex}
@@ -117,4 +116,3 @@
   {\par \textit{#1} ~ #2 \par}
   \vspace{0.85ex}
 }
-
