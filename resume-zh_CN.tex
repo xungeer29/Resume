@@ -1,0 +1,95 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+% \usepackage{NotoSansSC_external}
+% \usepackage{NotoSerifCJKsc_external}
+% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{李润明}
+
+\basicInfo{
+  \email{runmingli\_edu@163.com} \textperiodcentered\ 
+  \phone{(+86) 139-8001-6050} \textperiodcentered\ 
+  \github[EULIR]{https://github.com/EULIR} \textperiodcentered\ 
+  \linkedin[李润明]{www.linkedin.com/in/runming}
+  }
+ 
+\section{\faGraduationCap\  教育背景}
+\datedsubsection{\textbf{成都七中林荫校区}，四川，中国}{2017年9月 -- 至今}
+
+\section{\faGithubAlt\ 项目经历}
+
+\datedsubsection{\textbf{EULIR Extended Math Library}}{\url{https://github.com/EULIR/Extended-Math-Library}}
+\role{Java}{个人项目}
+JVM下的数学拓展库
+\begin{itemize}
+  \item 原生态实现数学公式和表达，包括空间向量、立体几何、多种方程快速求解等功能
+  \item 实现统计学计算公式，包括置信区间、卡方验证、二维统计等功能
+  \item 100\%单元测试覆盖，使用JUnit框架
+  \item 文档页面： {\url{https://eulir.github.io/eeml}}
+\end{itemize}
+
+\datedsubsection{\textbf{Project Euler}}{\url{https://github.com/EULIR/PROJECT-EULER}}
+\role{Java}{个人项目}
+“欧拉计划”解题报告
+\begin{itemize}
+  \item 正确实现超过100道“\href{https://projecteuler.net} {欧拉计划}”算法题目，全站排名前1\%
+\end{itemize}
+
+\datedsubsection{\textbf{Brainf**k Interpreter}}{\url{https://github.com/EULIR/Brainfuck-interpreter}}
+\role{Java}{个人项目}
+由Java编写而成的Brainf**k编程语言解释器
+\begin{itemize}
+  \item 100\%正确地解释Brainf**k语言代码，解释速度超部分网上在线编译器
+  \item 拥有语法错误检查机制，快速且正确地检查出语法错误，包括括号配对、队列溢出等功能
+\end{itemize}
+
+\datedsubsection{\textbf{Form Drawer}}{\url{https://github.com/GreatChina-CSClub/form-drawer}}
+\role{Java}{合作项目}
+数据可视化作图工具
+\begin{itemize}
+  \item 支持垂直直方图、折线图等图形进行简单或叠加式显示，图片可以被动态调整
+  \item 输入输出图片功能开启，支持jpg、png等多种图片格式
+\end{itemize}
+
+\section{\faCogs\ 技能}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf{编程语言}:
+    熟练掌握Java，可使用Kotlin/Python/C/Pascal进行编程； 每种语言至少一年以上使用经历
+  \item \textbf{网页设计}:
+    掌握HTML/CSS， 个人网站包括： {\url{http://www.neofuture.tech}} 和 {\url{http://www.cmstation.cn}}
+  \item \textbf{开发工具}:
+    可以适应任何编辑器/操作系统，通常情况下在Windows和CentOS下使用Jetbrains IDE和Notepad++； 拥有使用git、GitHub、Coding.net等团队协作工具的经历
+  \item \textbf{编译原理}:
+    理解编译器基本原理， 包括相关原理、技术和工具等 
+  \item \textbf{统计学}:
+    拥有一年大学级别统计学课程经历，获得美国大学对应的一学年学分
+\end{itemize}
+
+\section{\faHeartO\ 成就}
+\datedline{“\href{https://projecteuler.net} {欧拉计划}”全站排名前1\%}{2018年3月}
+
+\section{\faInfo\ 其它}
+\begin{itemize}[parsep=0.5ex]
+  %\item Blog: \url{https://eulir.github.io/}
+  \item 在过去一年中在GitHub上提交超过700次开源贡献 参见： \url{https://eulir.github.io/open-source-contribution/} 
+    另请参见： {\url{https://github.com/EULIR}}
+  \item 语言: 英语 - 熟练 (托福 111)， 中文 - 母语
+  \item 意向职位： 软件开发实习
+  \item 获得此简历的最新版本 \url{https://tinyurl.com/eulir-resume}
+\end{itemize}
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
